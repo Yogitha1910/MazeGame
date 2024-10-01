@@ -1,0 +1,76 @@
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <title>Maze Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      padding: 25px;
+      background-color: white;
+      color: black;
+      font-size: 25px;
+    }
+    
+    .dark-mode {
+      background-color: black;
+      color: white;
+    }
+    </style>
+</head>
+  <body>
+    <div id="gradient"></div>
+    <div id="page">
+        <!-- Add a button to toggle light/dark mode -->
+        <!--<button id="modeButton" onclick="myFunction()">Dark mode</button>-->
+        <input id="modeButton" type="button" onclick="myFunction('page')" value="Dark Mode" />
+        <!--<script>
+        function myFunction() {
+           var element = document.body;
+           var button = document.getElementById("modeButton");
+           element.classList.toggle("dark-mode");
+           
+           // Change the button text based on the current mode
+           if (element.classList.contains("dark-mode")) {
+               button.textContent = "Light mode";
+               lineColor = "white";
+           } else {
+               button.textContent = "Dark mode";
+               lineColor = "black";
+           }
+           drawMaze.redrawMaze(50);
+        }
+        </script>-->
+      <div id="Message-Container">
+        <div id="message">
+          <h1>Hiii!</h1>
+          <p>You are good to go.</p>
+          <p id="moves"></p>
+          <input id="okBtn" type="button" onclick="toggleVisablity('Message-Container')" value="Cool!" />
+        </div>
+      </div>
+      <label for="username">Enter Your Name: </label>
+      <input type="text" id="username" placeholder="Your Name" />
+        <input id="startMazeBtn" type="button" onclick="startGame()" value="Start" />
+      </div>
+      <div id="timer">Timer: 0 seconds</div>
+      <div id="menu">
+        <div class="custom-select">
+          <select id="diffSelect">
+                    <option value="10">Easy</option>
+                    <option value="15">Medium</option>
+                    <option value="25">Hard</option>
+                    <option value="38">Extreme</option>
+                </select>
+        </div>
+
+      <div id="view">
+        <div id="mazeContainer">
+          <canvas id="mazeCanvas" class="border" height="500" width="500"></canvas>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
