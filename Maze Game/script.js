@@ -585,7 +585,7 @@ window.onload = function() {
   };
   sprite = new Image();
   sprite.src =
-    "https://raw.githubusercontent.com/TheCodeDepository/PickleRick-MazeGame/master/media/sprite.png";
+    "https://png.pngtree.com/png-clipart/20201210/ourmid/pngtree-waving-hello-little-mouse-clipart-png-image_2537429.jpg";
   sprite.setAttribute("crossOrigin", " ");
   sprite.onload = function() {
     sprite = changeBrightness(1.2, sprite);
@@ -595,7 +595,7 @@ window.onload = function() {
   };
 
   finishSprite = new Image();
-  finishSprite.src = "https://raw.githubusercontent.com/TheCodeDepository/PickleRick-MazeGame/master/media/finishSprite.png";
+  finishSprite.src = "https://png.pngtree.com/png-vector/20190219/ourmid/pngtree-vector-cheese-icon-png-image_563215.jpg";
   finishSprite.setAttribute("crossOrigin", " ");
   finishSprite.onload = function() {
     finishSprite = changeBrightness(1.1, finishSprite);
